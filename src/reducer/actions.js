@@ -2,7 +2,7 @@
 
 export function getRecipes() {
     return function(dispatch) {
-      return fetch("http://localhost:3001/recipes")
+      return fetch("https://food-app-pi.herokuapp.com/recipes")
         .then(response => response.json())
         .then(json => {
           dispatch({ type: "GET_RECIPES", payload: json });
@@ -12,7 +12,7 @@ export function getRecipes() {
   
 export function getRecipeById(id){
   return function(dispatch) {
-    return fetch(`http://localhost:3001/recipes/${id}`)
+    return fetch(`https://food-app-pi.herokuapp.com/recipes/${id}`)
       .then(response => response.json())
       .then(json => {
         dispatch({ type: "GET_RECIPE_BY_ID", payload: json });
@@ -36,7 +36,7 @@ export function createRecipe(data){
      })
   };
   return function(dispatch){
-   return fetch('http://localhost:3001/recipes', requestOptions)
+   return fetch('https://food-app-pi.herokuapp.com/recipes', requestOptions)
     .then(response => response.json())
     .then(data => {
       dispatch({ type: "CREATE_RECIPE", payload: data });
