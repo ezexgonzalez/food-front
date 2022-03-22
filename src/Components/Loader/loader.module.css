@@ -1,0 +1,35 @@
+
+
+
+
+.container{
+    width: 100%;
+    transition: 1s ease;
+    height: 60vh;
+    
+}
+
+.carga{
+
+    border: 15px solid rgb(51, 51, 51);
+    border-top-color: #fc76a1;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: girar 1.5s linear infinite;
+    
+
+}
+
+
+@keyframes girar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

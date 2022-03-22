@@ -1,0 +1,169 @@
+
+.card{
+
+    background-color: #44444433;
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    
+
+}
+
+@media only screen and (max-width: 1400px) {
+   
+    .card{
+
+        background-color: #44444433;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+    
+    }
+}
+
+.imgRecipe{
+
+    border-radius: 20px;
+    margin: 40px 40px 0px 0px;
+    width: 310px;
+    height: 250px;
+   
+}
+
+.infoContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0px 0px 0px;
+   
+
+}
+
+
+
+.mainContainer{
+
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    
+
+}
+
+.title{
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tick{
+
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.pContainer{
+
+    display: flex;
+
+    width: 100%;
+    margin: 30px;
+    justify-content: space-evenly;
+
+}
+
+.subtitle{
+
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    
+}
+
+
+.subtitle2{
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    display: inline-block;
+
+}
+
+.punctuation{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.number{
+
+    font-weight: 700;
+    font-size: 30px;
+    color: #fc76a1;
+    margin-bottom: 10px;
+
+}
+b{
+    color: #fc76a1;
+}
+
+.summary{
+
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px 0px 20px 40px;
+    color: rgb(176, 185, 176);
+
+}
+
+.summaryContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:justify;
+    margin: 0px 40px 0px 40px;
+    font-size: 18px;
+
+}
+
+
+.steps{
+    margin: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ingredients{
+
+    display: inline-block;
+   margin: 10px 10px 10px 0px;
+   color: rgba(255,159,124,1);
+
+}
+
+.step{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(212, 206, 206);
+}
+
+.textIng{
+    font-size: 17px;
+    color: rgba(187,63,221,1);
+
+}
+.parrafo{
+
+    margin-bottom: 15px;
+
+}

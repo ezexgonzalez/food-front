@@ -1,0 +1,38 @@
+
+.container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    flex-direction: column;
+    
+    
+    
+}
+
+.button{
+
+    border: none;
+    color: black;
+    font-weight: 500;
+    background-color:#fc76a1;
+    margin: 20px 10px 20px 10px;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button:hover{
+
+    background-color: transparent;
+    border: 3px solid #fc76a1;
+    color: white;
+
+}
+
+
+
