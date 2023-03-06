@@ -2,7 +2,7 @@
 
 export function getRecipes() {
     return function(dispatch) {
-      return fetch("https://food-app-pi.herokuapp.com/recipes")
+      return fetch("https://foodappbackend-5ojb.onrender.com/recipes")
         .then(response => response.json())
         .then(json => {
           dispatch({ type: "GET_RECIPES", payload: json });
@@ -12,7 +12,7 @@ export function getRecipes() {
   
 export function getRecipeById(id){
   return function(dispatch) {
-    return fetch(`https://food-app-pi.herokuapp.com/recipes/${id}`)
+    return fetch(`https://foodappbackend-5ojb.onrender.com/recipes/${id}`)
       .then(response => response.json())
       .then(json => {
         dispatch({ type: "GET_RECIPE_BY_ID", payload: json });
@@ -36,7 +36,7 @@ export function createRecipe(data){
      })
   };
   return function(dispatch){
-   return fetch('https://food-app-pi.herokuapp.com/recipes', requestOptions)
+   return fetch('https://foodappbackend-5ojb.onrender.com/recipes', requestOptions)
     .then(response => response.json())
     .then(data => {
       dispatch({ type: "CREATE_RECIPE", payload: data });
